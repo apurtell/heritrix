@@ -200,11 +200,12 @@ implements UserAgentProvider,
 
     protected static Validator VALIDATOR = new BeanFieldsPatternValidator(
             CrawlMetadata.class,
-            "userAgentTemplate", 
-            "^.*\\+@OPERATOR_CONTACT_URL@.*$", 
-            "You must supply a userAgentTemplate value that includes " +
-            "the string \"@OPERATOR_CONTACT_URL@\" where your crawl" +
-            "contact URL will appear.",
+            
+//            "userAgentTemplate", 
+//            "^.*\\+@OPERATOR_CONTACT_URL@.*$", 
+//            "You must supply a userAgentTemplate value that includes " +
+//            "the string \"@OPERATOR_CONTACT_URL@\" where your crawl" +
+//            "contact URL will appear.",
             
             "operatorContactUrl", 
             "^https?://.*$", 
